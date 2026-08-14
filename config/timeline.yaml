@@ -254,6 +254,7 @@ presets:
         # analyze 继承 default: false → 午间不做 AI 分析，节省 API
         # once 继承 default（push: true）→ 只推一次
 
+        analyze: true
       closing_summary:
         name: "收工汇总"
         start: "17:00"
@@ -276,6 +277,7 @@ presets:
           push: false              # 不限制推送次数
 
     # 工作日使用三段式推送；周末使用增量自由模式
+        analyze: true
     day_plans:
       workday:
         periods: ["morning_briefing", "noon_update", "closing_summary"]
